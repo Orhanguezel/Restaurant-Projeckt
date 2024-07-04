@@ -1,0 +1,47 @@
+<?php
+$menuData = [
+    [
+        "name" => "kinder",
+        "description" => "Unsere Hauptgerichte sind herzhaft und sättigend, perfekt für den großen Hunger.",
+        "subcategories" => [
+            [
+                "name" => "fuerKinder",
+                "description" => "Unsere Kindergerichte sind speziell auf die Bedürfnisse der kleinen Gäste abgestimmt.",
+                "images" => ["/assets/menu/32.jpg", "/assets/menu/31.jpg"],
+                "items" => [
+                    [
+                        "nr" => "110",
+                        "type" => "food",
+                        "name" => "Kinder Döner",
+                        "zusatztoffe" => [2, 3, 4],
+                        "allergene" => ["a", "g", "f", "l", "b"],
+                        "description" => "mit Salat und Tzatziki",
+                        "prices" => ["default" => 4.00]
+                    ],
+                    [
+                        "nr" => "111",
+                        "type" => "food",
+                        "name" => "Kinder Box",
+                        "zusatztoffe" => [2, 3, 4],
+                        "allergene" => ["g", "f", "l", "b"],
+                        "description" => "mit Pommes",
+                        "prices" => ["default" => 7.50]
+                    ],
+                    [
+                        "nr" => "112",
+                        "type" => "food",
+                        "name" => "Kinder Teller",
+                        "zusatztoffe" => [2, 3, 4],
+                        "allergene" => ["a", "g", "f", "l", "b"],
+                        "description" => "mit Pommes, Salat und Tzatziki",
+                        "prices" => ["default" => 9.00]
+                    ]
+                ]
+            ]
+        ]
+    ]
+];
+
+header('Content-Type: application/json');
+echo json_encode($menuData, JSON_PRETTY_PRINT);
+?>
