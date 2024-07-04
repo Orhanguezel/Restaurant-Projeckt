@@ -1,0 +1,12 @@
+body {
+    background-color: #f8f9fa;
+}
+.jumbotron {
+    background-image: url('images/hero.jpg');
+    background-size: cover;
+    color: white;
+}
+footer {
+    background-color: #343a40;
+    color: white;
+}

@@ -1,0 +1,43 @@
+{
+  "categories": [
+    {"name": "salateSaucen",
+  "description": "Unsere Hauptgerichte sind herzhaft und sättigend, perfekt für den großen Hunger.",
+  "subcategories": [
+    {
+      "name": "salate",
+      "description": "Frische Salate und köstliche Saucen, die jedes Gericht ergänzen.",
+      "images": ["/assets/menu/34.jpg", "/assets/menu/35.jpg"],
+      "items": [
+        { "nr": "113", "type": "food", "name": "Hawaii Salat", "zusatztoffe": [2, 3, 4], "allergene": ["a", "g", "f", "l", "b"], "description": "Eisbergsalat, Tomaten, Gurken, Schinken, Gouda, Ananas", "prices": { "klein": 7.00, "groß": 9.50 }},
+        { "nr": "114", "type": "food", "name": "Capricciosa Salat", "zusatztoffe": [2, 3, 4], "allergene": ["a", "g", "f", "l", "b"], "description": "Eisbergsalat, Tomaten, Gurken, Schinken, Thunfisch, Zwiebeln, Ei", "prices": { "klein": 7.00, "groß": 9.50 }},
+        { "nr": "115", "type": "food", "name": "Bauern Salat", "zusatztoffe": [2, 3, 4], "allergene": ["a", "g", "f", "l", "b"], "description": "Eisbergsalat, Tomaten, Gurken, Peperoni, Hirtenkäse", "prices": { "klein": 7.00, "groß": 9.50 }},
+        { "nr": "116", "type": "food", "name": "Mista Salat", "zusatztoffe": [2, 3, 4], "allergene": ["a", "g", "f", "l", "b"], "description": "Eisbergsalat, Tomaten, Gurken, Paprika, Gouda, Zwiebeln", "prices": { "klein": 7.00, "groß": 9.50 }},
+        { "nr": "117", "type": "food", "name": "Thunfisch Salat", "zusatztoffe": [2, 3, 4], "allergene": ["a", "g", "f", "l", "b"], "description": "Eisbergsalat, Tomaten, Gurken, Paprika, Gouda, Zwiebeln", "prices": { "klein": 7.00, "groß": 9.50 }},
+        { "nr": "118", "type": "food", "name": "Mozzarella Salat", "zusatztoffe": [2, 3, 4], "allergene": ["a", "g", "f", "l", "b"], "description": "Eisbergsalat, Tomaten, Gurken, Oliven, Peperoni, Mozzarella", "prices": { "klein": 7.00, "groß": 9.50 }},
+        { "nr": "119", "type": "food", "name": "Insalata dello Chef", "zusatztoffe": [2, 3, 4], "allergene": ["a", "g", "f", "l", "b"], "description": "Eisbergsalat, gek. Schinken, Hähnchenfleisch, Mais, Tomaten", "prices": { "klein": 7.50, "groß": 10.00 }},
+        { "nr": "120", "type": "food", "name": "Insalata alla Cesa", "zusatztoffe": [2, 3, 4], "allergene": ["a", "g", "f", "l", "b"], "description": "Eisbergsalat, gek. Schinken, Thunfisch, Gouda, Tomaten", "prices": { "klein": 7.50, "groß": 9.50 }},
+        { "nr": "121", "type": "food", "name": "Gemischter Salat", "zusatztoffe": [2, 3, 4], "allergene": ["a", "g", "f", "l", "b"], "description": "Eisbergsalat, Tomaten, Gurken, Kraut, Zwiebeln", "prices": { "klein": 7.00, "groß": 9.50 }},
+        { "nr": "122", "type": "food", "name": "Döner Salat", "zusatztoffe": [2, 3, 4], "allergene": ["a", "g", "f", "l", "b"], "description": "Dönerfleisch, Eisbergsalat, Tomaten, Gurken, Kraut, Zwiebeln, Hirtenkäse", "prices": { "klein": 7.50, "groß": 10.50 }}
+      ]
+    },
+    {
+      "name": "saucen",
+      "description": "Sie können zussätzlich ztu allen Gerichten bestellt werden",
+      "images": ["/assets/menu/13.jpg", "/assets/menu/12.jpg"],
+      "items": [
+        { "nr": "86", "type": "food", "name": "Champignons, Rahmsauce", "zusatztoffe": [9], "allergene": ["a", "f", "g", "i"], "description": "Rahmsauce", "prices": { "aufPommes": 1.50, "kleineSchale": 2.50, "großeSchale": 3.90 }},
+        { "nr": "87", "type": "food", "name": "Jägersauce", "zusatztoffe": [1, 2, 8], "allergene": ["j"], "description": "Jägersauce", "prices": { "aufPommes": 1.50, "kleineSchale": 2.50, "großeSchale": 3.90 }},
+        { "nr": "871", "type": "food", "name": "Zigeunersauce", "zusatztoffe": [2, 4], "allergene": ["a", "b", "i", "j"], "description": "Zigeunersauce", "prices": { "aufPommes": 1.50, "kleineSchale": 2.50, "großeSchale": 3.90 }},
+        { "nr": "88", "type": "food", "name": "Ketchup", "zusatztoffe": [1, 2, 8], "allergene": ["j"], "description": "Ketchup", "prices": { "aufPommes": 1.00, "kleineSchale": 2.00, "großeSchale": 2.50 }},
+        { "nr": "881", "type": "food", "name": "Mayonnaise", "zusatztoffe": [1, 2], "allergene": ["a", "f", "j"], "description": "Mayonnaise", "prices": { "aufPommes": 1.00, "kleineSchale": 2.00, "großeSchale": 2.50 }},
+        { "nr": "882", "type": "food", "name": "Currysauce", "zusatztoffe": [1, 2], "allergene": ["j"], "description": "Currysauce", "prices": { "aufPommes": 1.00, "kleineSchale": 2.00, "großeSchale": 2.50 }},
+        { "nr": "89", "type": "food", "name": "Tzatziki", "zusatztoffe": [], "allergene": ["g"], "description": "Tzatziki", "prices": { "kleineSchale": 2.50, "großeSchale": 3.00 }},
+        { "nr": "891", "type": "food", "name": "Cocktailsauce", "zusatztoffe": [1, 2, 8], "allergene": ["a", "c", "f", "j"], "description": "Cocktailsauce", "prices": { "kleineSchale": 2.50, "großeSchale": 3.00 }},
+        { "nr": "90", "type": "food", "name": "Scharf, Peperoni", "zusatztoffe": [2, 3], "allergene": [], "description": "Peperoni", "prices": { "kleineSchale": 2.50, "großeSchale": 3.00 }},
+        { "nr": "901", "type": "food", "name": "Hirtenkäse", "zusatztoffe": [1], "allergene": ["g"], "description": "", "prices": { "aufPommes": 0.50, "kleineSchale": 3.50, "großeSchale": 4.90 }}
+      ]
+    }
+  ]
+}
+  ]
+}
