@@ -1,22 +1,56 @@
 <?php
-function readJsonFiles($directory) {
-    $files = glob($directory . '/*.json');
-    $menuData = [];
-
-    foreach ($files as $file) {
-        $jsonContent = file_get_contents($file);
-        $data = json_decode($jsonContent, true);
-        if (isset($data['categories'])) {
-            $menuData = array_merge($menuData, $data['categories']);
-        }
-    }
-
-    return $menuData;
-}
-
-$directory = '/home/dci-admin/restaurant-management/data';
-$menuData = readJsonFiles($directory);
+$menuData = [
+    [
+        "name" => "Pizzas",
+        "subcategories" => [
+            [
+                "name" => "Vegetarian",
+                "items" => [
+                    [
+                        "name" => "Margherita",
+                        "prices" => ["default" => 8]
+                    ],
+                    [
+                        "name" => "Veggie Delight",
+                        "prices" => ["default" => 10]
+                    ]
+                ]
+            ],
+            [
+                "name" => "Non-Vegetarian",
+                "items" => [
+                    [
+                        "name" => "Pepperoni",
+                        "prices" => ["default" => 12]
+                    ],
+                    [
+                        "name" => "BBQ Chicken",
+                        "prices" => ["default" => 14]
+                    ]
+                ]
+            ]
+        ]
+    ],
+    [
+        "name" => "Drinks",
+        "subcategories" => [
+            [
+                "name" => "Soft Drinks",
+                "items" => [
+                    [
+                        "name" => "Coca Cola",
+                        "prices" => ["default" => 2]
+                    ],
+                    [
+                        "name" => "Sprite",
+                        "prices" => ["default" => 2]
+                    ]
+                ]
+            ]
+        ]
+    ]
+];
 
 header('Content-Type: application/json');
-echo json_encode($menuData);
+echo json_encode($menuData, JSON_PRETTY_PRINT);
 ?>

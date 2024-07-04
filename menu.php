@@ -7,14 +7,14 @@ session_start();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Antalya Döner Pizzeria</title>
+    <title>Antalya Döner Pizzeria - Menu</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="index.php">
             <img src="images/logo.png" width="30" height="30" class="d-inline-block align-top" alt="Logo" loading="lazy">
             Antalya Döner Pizzeria
         </a>
@@ -23,6 +23,9 @@ session_start();
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.php">Home</a>
+                </li>
                 <li class="nav-item">
                     <a class="nav-link" href="menu.php">Menu</a>
                 </li>
@@ -53,35 +56,12 @@ session_start();
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <div class="jumbotron jumbotron-fluid text-center">
-        <div class="container">
-            <h1 class="display-4">Welcome to Antalya Döner Pizzeria</h1>
-            <p class="lead">The best pizza and döner in town.</p>
+    <!-- Menu Section -->
+    <div id="menu" class="container mt-5">
+        <h2>Our Menu</h2>
+        <div id="menu-container" class="row">
+            <!-- Menü verileri burada yüklenecek -->
         </div>
-    </div>
-
-    <!-- Gallery Section -->
-    <div id="gallery" class="container mt-5">
-        <h2>Gallery</h2>
-        <div class="row">
-            <div class="col-md-4">
-                <img src="images/gallery1.jpg" class="img-fluid" alt="Gallery Image 1">
-            </div>
-            <div class="col-md-4">
-                <img src="images/gallery2.jpg" class="img-fluid" alt="Gallery Image 2">
-            </div>
-            <div class="col-md-4">
-                <img src="images/gallery3.jpg" class="img-fluid" alt="Gallery Image 3">
-            </div>
-        </div>
-    </div>
-
-    <!-- Contact Section -->
-    <div id="contact" class="container mt-5">
-        <h2>Contact Us</h2>
-        <p>Email: info@antalya-doner-pizzeria.com</p>
-        <p>Phone: +123 456 7890</p>
     </div>
 
     <!-- Footer -->
@@ -101,5 +81,6 @@ session_start();
 
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/menu.js"></script>
 </body>
 </html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Menu Data</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1>Test Menu Data</h1>
+        <div id="menu-container" class="row">
+            <!-- Menü verileri burada yüklenecek -->
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $.ajax({
+                url: 'php/get_menu.php',
+                method: 'GET',
+                dataType: 'json',
+                success: function(data) {
+                    var menuContainer = $('#menu-container');
+                    data.forEach(function(category) {
+                        var categoryHeader = $('<h3>').addClass('col-12').text(category.name);
+                        menuContainer.append(categoryHeader);
+
+                        category.subcategories.forEach(function(subcategory) {
+                            var subcategoryHeader = $('<h4>').addClass('col-12').text(subcategory.name);
+                            menuContainer.append(subcategoryHeader);
+
+                            subcategory.items.forEach(function(item) {
+                                var itemCard = $('<div>').addClass('col-md-4 mb-4');
+                                var card = $('<div>').addClass('card');
+                                var cardBody = $('<div>').addClass('card-body');
+                                var cardTitle = $('<h5>').addClass('card-title').text(item.name);
+                                var cardText = $('<p>').addClass('card-text').text(item.prices.default + ' EUR');
+                                cardBody.append(cardTitle, cardText);
+                                card.append(cardBody);
+                                itemCard.append(card);
+                                menuContainer.append(itemCard);
+                            });
+                        });
+                    });
+                },
+                error: function(error) {
+                    console.error('Error fetching menu data:', error);
+                }
+            });
+        });
+    </script>
+</body>
+</html>
