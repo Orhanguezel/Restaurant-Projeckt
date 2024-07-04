@@ -106,5 +106,5 @@ Dieses Projekt ist eine webbasierte Anwendung zur Verwaltung eines Restaurants. 
 
 Bei Fragen oder Problemen wenden Sie sich bitte an:
 
-- Email: info@antalya-doner-pizzeria.com
-- Telefon: +123 456 7890
+- Email:orhan.guezel@dci-student.org
+- Telefon: +172 384 6068
